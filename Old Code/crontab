@@ -1,0 +1,2 @@
+@reboot PYTHONPATH=/usr/local/lib/python3.11/site-packages python3 /app/scraperv2.py > /proc/1/fd/1 2>/proc/1/fd/2
+0 1 * * * PYTHONPATH=/usr/local/lib/python3.11/site-packages python3 /app/scraperv2.py > /proc/1/fd/1 2>/proc/1/fd/2

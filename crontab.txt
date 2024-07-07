@@ -1,0 +1,4 @@
+# Run the script every day at 0 AM
+PATH_TO_DB=/data/verivox_thg.db 
+0 0 * * * /usr/local/bin/python3.12 /app/script.py >> /var/log/cron.log 2>&1
+@reboot /usr/local/bin/python3.12 /app/script.py >> /var/log/cron.log 2>&1
